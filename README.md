@@ -1,4 +1,8 @@
-# Chrome Extension: PR Changes with GPT
+# Chrome Extension: GPT PR Analyzer 🎉
+
+### Demo 🚀
+![Screen-Recording-2023-03-16-at-6](https://user-images.githubusercontent.com/17949497/226741131-88df2e24-656d-4ad4-84d8-eb8517843213.gif)
+
 
 PR Changes with GPT is a Chrome extension that helps developers quickly summarize and understand the changes in a pull request (PR) on GitHub. The extension uses the powerful language model GPT to analyze the changes and generate a brief summary that developers can quickly review.
 
