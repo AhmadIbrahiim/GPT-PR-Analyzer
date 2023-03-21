@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Github GPT-3",
+  "description": "Use GPT-3 to write your GitHub pull request descriptions.",
+  "version": "1.0.0",
+  "host_permissions": ["https://api.chatgpt.com/"],
+  "permissions": ["activeTab", "scripting", "storage", "alarms"],
+  "icons": {
+    "512": "assets/icons/hexagonal.png"
+  },
+
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://github.com/*/compare/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
